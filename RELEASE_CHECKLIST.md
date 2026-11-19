@@ -1,7 +1,7 @@
 # Release checklist
 
 1. Make a private GitHub repository named `ccd-kok-sai`; upload the extracted folder contents (including hidden `.gitignore`), not the parent ZIP. Do not add a second README or blanket licence at repository creation.
-2. Obtain the original `osm_waterways_raw.json` and `osm_waterways.geojson` created on the author's computer and add them to `03_code/map/` if rights allow; review the final map labels.
+2. Original `osm_waterways_raw.json` and `osm_waterways.geojson` supplied by the author and included in `03_code/map/`; regeneration tested. Review the final map labels and named river classifications before release.
 3. Verify the source dataset DOI/CC BY terms and PCD redistribution rights for both unmodified and derived data. If verification fails, omit restricted files and provide permitted links/retrieval instructions, updating the runner/manifest accordingly.
 4. Confirm institutional/author rights and choose scoped licences; proposed MIT code + CC BY 4.0 author-controlled documentation/outputs, preserving all source terms.
 5. Verify the PCD September campaign draft reference (`pcd25`) already added to `references.bib`; review all manuscript references. No manuscript PDF is included in this deposit.

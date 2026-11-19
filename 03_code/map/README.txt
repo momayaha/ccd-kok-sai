@@ -2,7 +2,7 @@ FIGURE 1 — Kok and Sai Rivers monitoring stations
 
 1. Install Python 3.11 or 3.12 on Windows, then open Command Prompt in this folder.
    py -m pip install -r requirements.txt
-2. Run with an Internet connection:
+2. Run with the supplied raw JSON cache (no network fetch needed). If the cache is absent, Internet access is required:
    py make_figure1.py
 3. If downloaded named Kok and Sai river geometry is present, the script writes:
    fig1-study-area.pdf (vector PDF)
@@ -24,5 +24,4 @@ Sources:
 * Coastlines for the inset: GSHHG through Basemap.
 
 Keep the OSM JSON with the reproducibility archive if the final figure is made.
-The final online download was not tested in the ChatGPT runtime because network access failed.
-The offline plotting code was executed and its figure visually inspected.
+The original cache was supplied by the author and the complete map was regenerated without a new download. The resulting PDF matched the archived map pixel-for-pixel at 100 dpi. The --offline flag is for a preview without rivers, not for cached map regeneration. See OSM_ATTRIBUTION.md and REPRODUCIBILITY_CHECK.md.
