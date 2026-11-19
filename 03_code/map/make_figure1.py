@@ -20,11 +20,10 @@ WATER='#3686ac'
 ENDPOINTS=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter']
 PATTERNS={
     'Kok':r'(^|\W)(kok|mae kok|nam kok)(\W|$)|แม่น้ำกก|น้ำกก',
-    'Sai':r'(^|\W)(sai|mae sai|nam sai|ruak|ruak river)(\W|$)|แม่น้ำสาย|น้ำสาย|แม่น้ำรวก|น้ำรวก',
-    'Mekong':r'mekong|แม่น้ำโขง|น้ำโขง',
+    'Sai':r'(^|\W)(sai|mae sai|nam sai)(\W|$)|แม่น้ำสาย|น้ำสาย',
+    'Ruak':r'(^|\W)(ruak|mae ruak|nam ruak)(\W|$)|แม่น้ำรวก|น้ำรวก',
+    'Mekong':r'(^|\W)(mekong)(\W|$)|แม่น้ำโขง|น้ำโขง',
 }
-# Ruak is a distinct river; do not identify it as Sai.
-PATTERNS['Sai']=r'(^|\W)(sai|mae sai|nam sai)(\W|$)|แม่น้ำสาย|น้ำสาย'
 
 def group(tags):
     names=' / '.join(str(v) for k,v in tags.items() if k=='name' or k.startswith('name:') or k in ('alt_name','official_name','int_name'))
@@ -72,7 +71,7 @@ def draw(out, df, lines=None):
     base.drawcountries(color='#65676b',linewidth=.85,zorder=2)
     # Country borders are generalized WDBII linework, not exact river boundaries.
     if lines:
-        for kind,color,width,z in [('other','#a9c9d9',.52,3),('Mekong','#6e9db4',1.25,4),('Kok','#176a9b',1.85,5),('Sai','#176a9b',1.85,5)]:
+        for kind,color,width,z in [('other','#a9c9d9',.52,3),('Mekong','#6e9db4',1.25,4),('Ruak','#6e9db4',1.25,4),('Kok','#176a9b',1.85,5),('Sai','#176a9b',1.85,5)]:
             segments=[line for k,line in lines.values() if k==kind]
             if segments: ax.add_collection(LineCollection(segments,colors=color,linewidths=width,zorder=z,clip_on=True))
     if 'preview' in out.name:
@@ -92,13 +91,12 @@ def draw(out, df, lines=None):
     ax.text(99.65,19.86,'THAILAND',color='#595d62',fontsize=11,weight='semibold',ha='center')
     ax.text(100.19,20.33,'LAOS',color='#595d62',fontsize=10,weight='semibold',ha='center')
     if lines:
-        # Label representative points on actual named geometries, not station-connecting lines.
-        for kind in ['Kok','Sai','Mekong']:
-            candidates=[(line,[(x,y) for x,y in line if W+.07<x<E-.09 and S+.06<y<N-.06]) for k,line in lines.values() if k==kind]
-            candidates=[(line,inside) for line,inside in candidates if inside]
-            if candidates:
-                _,inside=max(candidates,key=lambda item:len(item[1])); x,y=inside[len(inside)//2]
-                ax.annotate(f'{kind} River',(x,y),xytext=(0,12 if kind!='Sai' else -15),textcoords='offset points',fontsize=9,style='italic',weight='semibold',color='#176a9b',ha='center',zorder=7,bbox={'facecolor':'#f8f8f5','edgecolor':'none','alpha':.85,'pad':1})
+        # Manual label anchors avoid placing the Mekong label on the Ruak reach near SA03.
+        bbox={'facecolor':'#f8f8f5','edgecolor':'none','alpha':.85,'pad':1}
+        ax.text(99.62,20.035,'Kok River',fontsize=9,style='italic',weight='semibold',color='#176a9b',ha='center',zorder=7,bbox=bbox)
+        ax.text(99.845,20.402,'Sai River',fontsize=9,style='italic',weight='semibold',color='#176a9b',ha='center',zorder=7,bbox=bbox)
+        ax.text(100.04,20.438,'Ruak River',fontsize=9,style='italic',weight='semibold',color='#6e9db4',ha='center',zorder=7,bbox=bbox)
+        ax.text(100.165,20.325,'Mekong River',fontsize=9,style='italic',weight='semibold',color='#6e9db4',ha='center',rotation=78,zorder=7,bbox=bbox)
     ax.annotate('',xy=(.955,.933),xytext=(.955,.868),xycoords='axes fraction',arrowprops={'arrowstyle':'-|>','lw':1.4,'color':'#30343a'})
     ax.text(.955,.945,'N',transform=ax.transAxes,ha='center',va='bottom',weight='bold')
     # East-west geodesic scale, valid at the displayed latitude.

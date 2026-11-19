@@ -24,4 +24,4 @@ Sources:
 * Coastlines for the inset: GSHHG through Basemap.
 
 Keep the OSM JSON with the reproducibility archive if the final figure is made.
-The original cache was supplied by the author and the complete map was regenerated without a new download. The resulting PDF matched the archived map pixel-for-pixel at 100 dpi. The --offline flag is for a preview without rivers, not for cached map regeneration. See OSM_ATTRIBUTION.md and REPRODUCIBILITY_CHECK.md.
+The original cache was supplied by the author and the complete map was regenerated without a new download. The corrected map separates Ruak from Mekong and uses manually positioned labels. The regenerated PNG and PDF matched the corrected manuscript figure at 600 dpi and 100 dpi, respectively. The regenerated GeoJSON contains 304 way IDs. The --offline flag is for a preview without rivers, not for cached map regeneration. See OSM_ATTRIBUTION.md and REPRODUCIBILITY_CHECK.md.
