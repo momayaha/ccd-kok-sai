@@ -1,4 +1,4 @@
-# Zenodo deposit metadata — draft
+# Zenodo deposit metadata
 
 **Title**
 
@@ -12,7 +12,7 @@ Data and code for: Evaluating an Astronomy-Inspired Colour–Colour Diagram Appr
 
 **Affiliation:** Chiang Rai Rajabhat University, Thailand
 
-**Version:** 1.0.0 (publish after final author review)
+**Version:** 1.0.0
 
 **Publication date:** Actual date of public deposit, not an assumed article publication date.
 
@@ -22,13 +22,13 @@ This research compendium supports an exploratory evaluation of an astronomy-insp
 
 **Keywords:** astronomical photometry; optical physics; colour–colour diagram; Sentinel-2; remote sensing; turbidity; arsenic; water quality monitoring; Thailand
 
-**Licence(s):** Choose only after author approval and source rights verification. Proposed MIT for project code; CC BY 4.0 for author-owned documentation/derived outputs; source data and map attribution as described in DATA_ATTRIBUTION.md. Zenodo supports multiple/custom rights statements.
+**Licence(s):** MIT for author-controlled code; CC BY 4.0 for author-controlled documentation and original analytical contributions only; ODbL 1.0 for OSM database material. Underlying PCD material is redistributed for non-commercial academic research with attribution under https://pcdweb.pcd.go.th/terms. No blanket licence is granted over third-party material. See DATA_ATTRIBUTION.md.
 
-**Related works:** GitHub repository: https://github.com/momayaha/ccd-kok-sai (private during preparation; verify the public release link before adding it to the deposit). Cite source compilation DOI 10.5281/zenodo.23330747; add the article DOI as a supplement relationship only after it exists.
+**Related works:** GitHub repository: https://github.com/momayaha/ccd-kok-sai. Cite source compilation DOI 10.5281/zenodo.23330747; add the article DOI as a supplement relationship only after it exists.
 
 **Funding:** No external funding.
 
-**DOI:** 10.5281/zenodo.24372650 (reserved by the author in the manual Zenodo draft; not yet registered/public). Use that existing draft, not a second deposit.
+**DOI:** 10.5281/zenodo.24372650 (version DOI).
 
 ## Ready-to-paste LaTeX (after publishing)
 
@@ -36,4 +36,4 @@ This research compendium supports an exploratory evaluation of an astronomy-insp
 \dataavailability{Ground-based monitoring data were obtained from the Pollution Control Department of Thailand \cite{pcd25,pcd26} and the machine-readable compilation by Sinwisitsophon \cite{sin26}. Sentinel-2 data were accessed through Google Earth Engine \cite{goo26}. The analysis scripts, prepared datasets, archived satellite-derived reflectance tables, and results supporting this study are available at \url{https://github.com/momayaha/ccd-kok-sai} and are archived in Zenodo at \url{https://doi.org/10.5281/zenodo.24372650}.}
 ```
 
-Use this statement only after the public deposit and repository links have been verified. The reserved DOI must refer to the exact released files used in the paper.
+Use this statement only after the public deposit and repository links have been verified. The version DOI must refer to the exact released files used in the paper.
