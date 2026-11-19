@@ -2,6 +2,10 @@
 
 **Research compendium | v1.0.0 release candidate | 19 November 2026**
 
+**GitHub:** https://github.com/momayaha/ccd-kok-sai (private during preparation).
+
+**Reserved Zenodo version DOI:** 10.5281/zenodo.24372650 — https://doi.org/10.5281/zenodo.24372650 (draft; not yet registered or publicly accessible).
+
 **Author:** Farung Surina — Faculty of Science and Technology, Chiang Rai Rajabhat University, Chiang Rai, Thailand. ORCID: https://orcid.org/0000-0002-9717-9806
 
 **Associated manuscript (in preparation):** Evaluating an Astronomy-Inspired Colour–Colour Diagram Approach for River Turbidity Assessment: Implications for Arsenic Contamination Screening in the Kok and Sai Rivers, Thailand
@@ -51,4 +55,4 @@ The upstream GEE export is already provided, so no GEE account is needed for loc
 
 ## Cite and reuse
 
-Cite the author, the version-specific Zenodo DOI after it is minted, and the underlying data sources as indicated in `DATA_ATTRIBUTION.md`. The journal article is in preparation and no article DOI is asserted here. Licence choices must be confirmed by the author before public release; no blanket licence is granted over third-party material. See `RELEASE_CHECKLIST.md`.
+After publication, cite Farung Surina (2026), version 1.0.0, https://doi.org/10.5281/zenodo.24372650, and the underlying data sources as indicated in `DATA_ATTRIBUTION.md`. The DOI identifies the research compendium, not the journal article. The journal article is in preparation and no article DOI is asserted here. Licence choices must be confirmed by the author before public release; no blanket licence is granted over third-party material. See `RELEASE_CHECKLIST.md`.

@@ -24,16 +24,16 @@ This research compendium supports an exploratory evaluation of an astronomy-insp
 
 **Licence(s):** Choose only after author approval and source rights verification. Proposed MIT for project code; CC BY 4.0 for author-owned documentation/derived outputs; source data and map attribution as described in DATA_ATTRIBUTION.md. Zenodo supports multiple/custom rights statements.
 
-**Related works:** Link the actual GitHub repository/release when available. Cite source compilation DOI above; add the article DOI as a supplement relationship only after it exists.
+**Related works:** GitHub repository: https://github.com/momayaha/ccd-kok-sai (private during preparation; verify the public release link before adding it to the deposit). Cite source compilation DOI 10.5281/zenodo.23330747; add the article DOI as a supplement relationship only after it exists.
 
 **Funding:** No external funding.
 
-**DOI:** Reserve in a manual draft or let Zenodo mint it when archiving a GitHub release. No DOI has been created by this package.
+**DOI:** 10.5281/zenodo.24372650 (reserved by the author in the manual Zenodo draft; not yet registered/public). Use that existing draft, not a second deposit.
 
 ## Ready-to-paste LaTeX (after publishing)
 
 ```latex
-\dataavailability{Ground-based monitoring data were obtained from the Pollution Control Department of Thailand \cite{pcd25,pcd26} and the machine-readable compilation by Sinwisitsophon \cite{sin26}. Sentinel-2 data were accessed through Google Earth Engine \cite{goo26}. The analysis scripts, prepared datasets, archived satellite-derived reflectance tables, and results supporting this study are available at \url{GITHUB_URL} and are archived in Zenodo at \url{https://doi.org/VERSION_DOI}.}
+\dataavailability{Ground-based monitoring data were obtained from the Pollution Control Department of Thailand \cite{pcd25,pcd26} and the machine-readable compilation by Sinwisitsophon \cite{sin26}. Sentinel-2 data were accessed through Google Earth Engine \cite{goo26}. The analysis scripts, prepared datasets, archived satellite-derived reflectance tables, and results supporting this study are available at \url{https://github.com/momayaha/ccd-kok-sai} and are archived in Zenodo at \url{https://doi.org/10.5281/zenodo.24372650}.}
 ```
 
-Replace the placeholders with real verified links; use the numerical version DOI for the exact files used in the paper.
+Use this statement only after the public deposit and repository links have been verified. The reserved DOI must refer to the exact released files used in the paper.

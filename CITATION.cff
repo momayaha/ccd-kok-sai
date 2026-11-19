@@ -1,13 +1,16 @@
 cff-version: 1.2.0
 message: "Please cite this research compendium and the original data sources when using this work."
 title: "Data and code for: Evaluating an Astronomy-Inspired Colour–Colour Diagram Approach for River Turbidity Assessment: Implications for Arsenic Contamination Screening in the Kok and Sai Rivers, Thailand"
-type: software
+type: dataset
 authors:
   - family-names: Surina
     given-names: Farung
     orcid: "https://orcid.org/0000-0002-9717-9806"
     affiliation: Chiang Rai Rajabhat University
 version: "1.0.0"
+# Reserved version DOI; public resolution is expected only after Zenodo publication.
+doi: "10.5281/zenodo.24372650"
+repository-code: "https://github.com/momayaha/ccd-kok-sai"
 keywords:
   - astronomical photometry
   - optical physics
