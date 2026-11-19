@@ -1,0 +1,6 @@
+family,RMSE_log10_NTU
+training_mean,0.3373841803388422
+single_band,0.3717340282921124
+single_colour,0.30428538092287505
+two_colours,0.2708268361206184
+all_four_bands,0.3073476743744329

@@ -1,0 +1,6 @@
+score,model,n,n_above,AUC
+turbidity_NTU_raw,Measured turbidity,45,10,0.6728571428571428
+single_band_NTU,Single band,45,10,0.5685714285714286
+single_colour_NTU,Single colour index,45,10,0.49714285714285716
+two_colours_NTU,CCD,45,10,0.4942857142857143
+all_four_bands_NTU,Four bands,45,10,0.4542857142857143

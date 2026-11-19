@@ -1,0 +1,2 @@
+# Inputs and raw exports
+Master CSV: 300 observations, 17 stations, 22 rounds. Reference coordinates: not verified for each round. GEE observations: point asset input. Aperture v2 CSV: archived candidate export including failures. Same-day date audit: date and coordinate evidence. Master table construction and manual audit are not fully automated. Full satellite images are not bundled. Contains modified Copernicus Sentinel data 2025–2026.

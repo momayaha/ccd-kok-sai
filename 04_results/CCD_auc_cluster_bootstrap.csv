@@ -1,0 +1,34 @@
+cohort,score,n,n_above,n_at_or_below,n_stations,n_rounds,AUC,bootstrap_cluster,CI95_low,CI95_high,draws,valid_draws,interpretation
+Both,Measured turbidity,296,176,120,17,22,0.7907433712121212,station,0.7009002524084845,0.8636657916491421,10000,10000,conditional on archived scores; no model refitting
+Both,Measured turbidity,296,176,120,17,22,0.7907433712121212,round,0.6931468147616138,0.8774643544399956,10000,10000,conditional on archived scores; no model refitting
+Both,Measured turbidity,296,176,120,17,22,0.7907433712121212,station_x_round,0.6364251505199782,0.9011206792804295,10000,10000,conditional on archived scores; no model refitting
+Both,LOstationO logistic (fixed predictions),296,176,120,17,22,0.7748816287878788,station,0.6875609990987841,0.8485653410535914,10000,10000,conditional on archived scores; no model refitting
+Both,LOstationO logistic (fixed predictions),296,176,120,17,22,0.7748816287878788,round,0.6720752407008471,0.864613831651821,10000,10000,conditional on archived scores; no model refitting
+Both,LOstationO logistic (fixed predictions),296,176,120,17,22,0.7748816287878788,station_x_round,0.6209257348559301,0.8883964779104064,10000,10000,conditional on archived scores; no model refitting
+Both,LOroundO logistic (fixed predictions),296,176,120,17,22,0.7692234848484848,station,0.6721055437102131,0.8475378862725343,10000,10000,conditional on archived scores; no model refitting
+Both,LOroundO logistic (fixed predictions),296,176,120,17,22,0.7692234848484848,round,0.6652485866772443,0.8676481790583306,10000,10000,conditional on archived scores; no model refitting
+Both,LOroundO logistic (fixed predictions),296,176,120,17,22,0.7692234848484848,station_x_round,0.6035005650617478,0.889531087935873,10000,10000,conditional on archived scores; no model refitting
+Kok,Measured turbidity,236,117,119,14,22,0.7350427350427351,station,0.6513523640019961,0.8148665721876645,10000,10000,conditional on archived scores; no model refitting
+Kok,Measured turbidity,236,117,119,14,22,0.7350427350427351,round,0.5907410458695054,0.8540726506330806,10000,10000,conditional on archived scores; no model refitting
+Kok,Measured turbidity,236,117,119,14,22,0.7350427350427351,station_x_round,0.5539998250751894,0.8739629557708838,10000,10000,conditional on archived scores; no model refitting
+Kok,LOstationO logistic (fixed predictions),236,117,119,14,22,0.7146807440925088,station,0.6343709465389875,0.7983019927214627,10000,10000,conditional on archived scores; no model refitting
+Kok,LOstationO logistic (fixed predictions),236,117,119,14,22,0.7146807440925088,round,0.5650356855688723,0.8370660007509975,10000,10000,conditional on archived scores; no model refitting
+Kok,LOstationO logistic (fixed predictions),236,117,119,14,22,0.7146807440925088,station_x_round,0.5289424418941354,0.8588548136645962,10000,10000,conditional on archived scores; no model refitting
+Kok,LOroundO logistic (fixed predictions),236,117,119,14,22,0.7013574660633485,station,0.6082727811960766,0.7878244329298545,10000,10000,conditional on archived scores; no model refitting
+Kok,LOroundO logistic (fixed predictions),236,117,119,14,22,0.7013574660633485,round,0.5515582891628532,0.8357298486023651,10000,10000,conditional on archived scores; no model refitting
+Kok,LOroundO logistic (fixed predictions),236,117,119,14,22,0.7013574660633485,station_x_round,0.5100339440518825,0.8567230743768132,10000,10000,conditional on archived scores; no model refitting
+Kok D4 50m,Measured turbidity,45,10,35,9,14,0.6728571428571428,station,0.5363636363636364,0.7666666666666667,10000,9992,conditional on archived scores; no model refitting
+Kok D4 50m,Measured turbidity,45,10,35,9,14,0.6728571428571428,round,0.4179394399460189,0.8862824675324674,10000,9999,conditional on archived scores; no model refitting
+Kok D4 50m,Measured turbidity,45,10,35,9,14,0.6728571428571428,station_x_round,0.3629078963756383,0.943385093167702,10000,9887,conditional on archived scores; no model refitting
+Kok D4 50m,Single band,45,10,35,9,14,0.5685714285714286,station,0.24791799109980928,0.858861583357551,10000,9992,conditional on archived scores; no model refitting
+Kok D4 50m,Single band,45,10,35,9,14,0.5685714285714286,round,0.2925462962962963,0.7932453416149067,10000,9999,conditional on archived scores; no model refitting
+Kok D4 50m,Single band,45,10,35,9,14,0.5685714285714286,station_x_round,0.1393952325531273,0.9455040792540792,10000,9887,conditional on archived scores; no model refitting
+Kok D4 50m,Single colour,45,10,35,9,14,0.49714285714285716,station,0.2820295932138037,0.7988886071670048,10000,9992,conditional on archived scores; no model refitting
+Kok D4 50m,Single colour,45,10,35,9,14,0.49714285714285716,round,0.2052710730130085,0.8050201252236134,10000,9999,conditional on archived scores; no model refitting
+Kok D4 50m,Single colour,45,10,35,9,14,0.49714285714285716,station_x_round,0.07901002506265664,0.8814021164021166,10000,9887,conditional on archived scores; no model refitting
+Kok D4 50m,CCD,45,10,35,9,14,0.4942857142857143,station,0.32316130050505054,0.6481481481481481,10000,9992,conditional on archived scores; no model refitting
+Kok D4 50m,CCD,45,10,35,9,14,0.4942857142857143,round,0.2571235521235521,0.7243872262489279,10000,9999,conditional on archived scores; no model refitting
+Kok D4 50m,CCD,45,10,35,9,14,0.4942857142857143,station_x_round,0.15343344155844157,0.8082833333333335,10000,9887,conditional on archived scores; no model refitting
+Kok D4 50m,Four bands,45,10,35,9,14,0.4542857142857143,station,0.23320402298850576,0.6138047580143169,10000,9992,conditional on archived scores; no model refitting
+Kok D4 50m,Four bands,45,10,35,9,14,0.4542857142857143,round,0.22727272727272727,0.6514459498834498,10000,9999,conditional on archived scores; no model refitting
+Kok D4 50m,Four bands,45,10,35,9,14,0.4542857142857143,station_x_round,0.12727272727272726,0.7903056620798556,10000,9887,conditional on archived scores; no model refitting

@@ -1,0 +1,5 @@
+pandas
+matplotlib
+basemap>=2.0
+pyproj
+requests
